@@ -26,37 +26,45 @@
     <!-- ############################################################################################
                                 Contact Modal
     ############################################################################################ -->
-     <!-- <section class="w-screen h-screen flex items-center justify-center bg-purple-500"> -->
-        <!-- <button id="open" class="bg-black py-4 px-6 rounded-xl text-lg text-white" type="button">Click me<span class="ml-1">😉</span></button> -->
-                <div id="modalOverlay" style="display:none;">
-                    <div id="modal" class="rounded-2xl max-w-2xl">
-                         <div class="flex w-full items-center justify-center border-b">
-                              <h1 class="pt-4 text-xl text-black font-semibold text-center pb-4">Speak to us</h1>
-                              <button id="close" class="m-4 absolute top-0 right-0 hover:bg-gray-200 rounded-full p-1 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-black" type="button">
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                   </svg>
-                              </button>
-                         </div>
-                         <div class="container px-5 py-24 mx-auto flex">
-                          <div class="lg:w-full md:full bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                            <!-- <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2> -->
-                            <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
-                            <div class="relative mb-4">
-                              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                            <div class="relative mb-4">
-                              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                              <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                            </div>
-                            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                            <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-                          </div>
-                        </div>
+    <!-- Main modal -->
+<div id="contact-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+    <div class="relative w-full h-full max-w-md md:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="contact-modal">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="px-6 py-6 lg:px-8">
+                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Speak to us</h3>
+                <form class="space-y-6" action="#">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Kirti Group" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
                     </div>
-               </div>
-     <!-- </section> -->
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                    </div>
+                  
+                    <div class="flex justify-between">
+                        <!-- <div class="flex items-start"> -->
+                            <!-- <div class="flex items-center h-5">
+                                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                            </div> -->
+                            <!-- <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label> -->
+                        <!-- </div> -->
+                        <!-- <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a> -->
+                    </div>
+                    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Request a Call back</button>
+                    <!-- <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                        Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
     <!-- ############################################################################################ -->
                         <!-- Contact modal ends -->
          <!-- ############################################################################################                -->
@@ -67,12 +75,12 @@
     
     <nav class="bg-white px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a href="./" class="flex items-center">
                 <img src="imgs/logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                 <span class="self-center text-xl font-semibold whitespace-nowrap">Kiriti Group</span>
             </a>
             <div class="flex md:order-2">
-                <button type="button" class="text-white bg-neutral-900 hover:bg-stone-50 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  ">Upcoming Projects</button>
+                <button type="button" class="text-white bg-neutral-900 hover:bg-stone-50 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center mr-0 md:mr-0  ">Upcoming Projects</button>
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -137,7 +145,7 @@
 <!-- Social Sharing Bar -->
 <div class="fixed right-0 bg-[#ffc113] top-40 z-50 px-5 py-3 flex flex-col space-y-3 w-16 border-solid border-2 border-neutral-900">
     <!-- Call -->
-    <a id="open" href="#" class="" title="Call Us">
+    <a data-modal-target="contact-modal" data-modal-toggle="contact-modal" href="#" class="" title="Call Us">
         <svg fill="" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path>
         </svg>
@@ -314,8 +322,6 @@
     <!-- ############################################################################################
             ----------------------------------- About Us -----------------------------------------------
             ############################################################################################# -->
-           
-          
 
             <section class="bg-neutral-900 text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto">
