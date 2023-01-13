@@ -102,7 +102,7 @@ h2.companyname{
   position: fixed;
   background: #ffc113;
   right: 65px;
-  top: 39%;
+  top: 474px;
   flex-direction: column;
   z-index: 999;
   border: 2px solid black;
@@ -113,11 +113,11 @@ height: 200px !important;
 }
 a.control_prev, a.control_next {
   background: rgba(0,0,0,0.3);
-  border-radius: 50%;
-  top: 25% !important;
+  border-radius: 0%;
+  top: 17% !important;
 }
 a.control_next {
-  right: 10%;
+  right: 0%;
 }
 }
 #slider {
@@ -142,7 +142,7 @@ a.control_next {
 
 a.control_prev, a.control_next {
   background: rgba(0,0,0,0.3);
-  border-radius: 50%;
+  border-radius: 0%;
   top: 40%;
 }
 
@@ -216,3 +216,9 @@ a.control_next {
   opacity: 1;
 }
 
+
+/* BOTTOM TO TOP BUTTON */
+#btn-back-to-top {
+  position: fixed;
+  display: none;
+}

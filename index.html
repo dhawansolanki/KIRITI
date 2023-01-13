@@ -159,7 +159,8 @@
 ############################################################################################ -->
 
 <!-- Social Sharing Bar -->
-<div class="fixed right-0 bg-[#ffc113] top-40 z-50 px-5 py-3 flex flex-col space-y-3 w-16 border-solid border-2 border-neutral-900">
+
+<div style="margin-top: 317.5px !important;"  class="fixed right-0 bg-[#ffc113]  z-50 px-5 py-3 flex flex-col space-y-3 w-16 border-solid border-2 border-neutral-900">
     <!-- Call -->
     <a data-modal-target="contact-modal" data-modal-toggle="contact-modal" href="#" class="" title="Call Us">
         <svg fill="" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -167,7 +168,7 @@
         </svg>
     </a>
     </div>
-    <div class="fixed right-0 bg-[#ffc113] top-52 z-50 -my-1 px-5 py-3 flex flex-col space-y-3 w-16 h-40 border-solid border-2 border-neutral-900">
+    <div style="margin-top: 363px;"  class="fixed right-0 bg-[#ffc113] z-50 -my-1 px-5 py-3 flex flex-col space-y-3 w-16 h-40 border-solid border-2 border-neutral-900">
     <!-- Users -->
     <a href="#enquire" class="h-16 -rotate-90 whitespace-nowrap h-24 my-7" title="Share on Twitter">
         <p class="h-24 py-10 whitespace-nowrap">
@@ -175,7 +176,7 @@
         </p>
     </a>
 </div>
-    <div class="fixed right-0 bg-[#ffc113] top-80 z-50 px-5 py-3 flex flex-col space-y-3 w-16 border-solid border-2 border-neutral-900 socialbutton">
+    <div style="margin-top: 474px;" class="fixed right-0 bg-[#ffc113] z-50 px-5 py-3 flex flex-col space-y-3 w-16 border-solid border-2 border-neutral-900 socialbutton">
     <!-- Users -->
     <a href="#" title="Share on Twitter">
         <svg fill="" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -184,13 +185,7 @@
 </a>
 </div>
 <div class="socialhide">
-    <!-- <div class="flex justify-center">
-        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1877f2;">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4">
-            <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-          </svg>
-        </button>
-      </div> -->
+    
       <div class="flex justify-center space-x-2">
 
         <a href="#!" role="button">
@@ -1220,6 +1215,10 @@
                         </ul> -->
                     </div>
                 </div>
+                <!-- Back to top button -->
+<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3  bg-[#ffc113] text-white font-large text-xs leading-tight uppercase rounded-full shadow-md hover:bg-white hover:shadow-lg focus:bg-black-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+</button>
                 </div>
     <script src="./scripts/index_script.js"></script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
@@ -1472,7 +1471,31 @@ $("#slider ul").click(function(){
   clearInterval(interval);
 });
 });    
+// Get the button
+let mybutton = document.getElementById("btn-back-to-top");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
         </script>
     </body>
     </html>
