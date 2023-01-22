@@ -8,6 +8,7 @@
 }
 html {
   scroll-behavior: smooth;
+  background: #171717;
 }
 
 
@@ -56,6 +57,12 @@ h2.companyname{
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+  margin-top: -30px;
+}
+@media(max-width:500px){
+  .cardsDiv{
+    margin-top: -120px;
+  }
 }
 #innerCardsDiv{
   backdrop-filter: blur(1px);
@@ -102,13 +109,14 @@ h2.companyname{
   position: fixed;
   background: #ffc113;
   right: 65px;
-  top: 474px;
+  top: 564px;
   flex-direction: column;
   z-index: 999;
   border: 2px solid black;
 }
 @media(max-width:450px){
 .slider{
+  margin-top: 20% !important;
 height: 200px !important;
 }
 a.control_prev, a.control_next {
@@ -136,7 +144,7 @@ a.control_next {
 }
 
 #slider ul li img {
-  height: 600px;
+  height: 100%;
   width: 100vw;
 } 
 
@@ -221,4 +229,28 @@ a.control_next {
 #btn-back-to-top {
   position: fixed;
   display: none;
+}
+
+
+
+
+
+.heromargin{
+  margin-top: 90px;
+}
+
+.listnavbar{
+  /* background: #171717; */
+}
+
+@media(max-width:900px){
+  
+.heromargin{
+  margin-top: 60px;
+}
+
+.listnavbar{
+  background: #171717;
+}
+
 }
