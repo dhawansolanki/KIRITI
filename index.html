@@ -88,14 +88,14 @@
     ----------------------------------- NAVBAR SECTION -----------------------------------------------
     ############################################################################################ -->
     
-    <nav class="px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0" style="background: rgba(0, 0, 0, 0.2);">
+    <nav class="px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0" style="background: rgba(0, 0, 0, 0.2);backdrop-filter: blur(2px);">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="./" class="flex items-center">
                 <img src="imgs/logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                 <span class="self-center text-xl font-semibold whitespace-nowrap text-[#c4a165]">Kiriti Group</span>
             </a>
             <div class="flex md:order-2">
-                <button type="button" class="text-white hover:bg-stone-50 hover:text-black hover:bg-[#c4a165] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center mr-0 md:mr-0 " style="background: #c4a165;">Upcoming Projects</button>
+                <button type="button" class="text-white uppercase hover:bg-stone-50 hover:text-black hover:bg-[#c4a165] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center mr-0 md:mr-0 " style="background: #c4a165;">Upcoming Projects</button>
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -148,7 +148,27 @@
                             </ul>
                         </div>
                     </li>
-                    
+                    <li>
+                        <div class="dropdown inline-block relative">
+                            <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
+                                <span class="mr-1 uppercase font-bold text-base">
+                                  <svg class="w-5 text-gold" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                                    <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z">
+                                    </path>
+                                    <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                                    </svg>
+                                </span>
+                                <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> -->
+                            </button>
+                            <ul class="dropdown-menu border border-[#c4a165] absolute hidden text-[#c4a165] bg-[#171717] pt-1 z-50" style="width: 200px;">
+                                <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="https://northerncolumbia.com/" target="_blank">Northern Colombia</a></li>
+                                <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#about">About Us</a></li>
+                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="./careers.html">Careers</a></li>
+                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#enquiremove">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
