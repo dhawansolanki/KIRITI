@@ -249,7 +249,25 @@ a.control_next {
 height: 0px;
 opacity: 0;
 }
+.navbarmenudesktop{
+
+}
+.navbarmenumob{
+opacity: 0;
+height: 0px;
+width: 0px;
+}
 @media(max-width:900px){
+  .navbarmenudesktop{
+opacity: 0;
+background: red;
+width: 0px;
+height: 0px;
+  }
+  .navbarmenumob{
+    opacity: 1;
+    margin-left: 75%;
+  }
   
 .heromargin{
   margin-top: 60px;
