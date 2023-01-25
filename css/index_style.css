@@ -242,7 +242,13 @@ a.control_next {
 .listnavbar{
   /* background: #171717; */
 }
+.desktophero{
 
+}
+.mobhero{
+height: 0px;
+opacity: 0;
+}
 @media(max-width:900px){
   
 .heromargin{
@@ -252,5 +258,33 @@ a.control_next {
 .listnavbar{
   background: #171717;
 }
+.desktophero{
+  height: 0px;
+  opacity: 0;
+}
+.mobhero{
+  height: 600px;
+opacity: 1;
+}
+}
 
+@media(max-width:600px){
+  .desktophero{
+    height: 0px;
+    opacity: 0;
+  }
+  .mobhero{
+    height: 400px;
+  opacity: 1;
+  }
+}
+@media(max-width:400px){
+  .desktophero{
+    height: 0px;
+    opacity: 0;
+  }
+  .mobhero{
+    height: 300px;
+  opacity: 1;
+  }
 }
