@@ -87,108 +87,121 @@
          <!-- ############################################################################################
     ----------------------------------- NAVBAR SECTION -----------------------------------------------
     ############################################################################################ -->
-    
+    <header class="text-gray-600 body-font" style="background:rgba(0, 0, 0, 0.2) ;backdrop-filter: blur(2px);">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a href="./" class="flex items-center">
+            <img src="imgs/logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-[#c4a165]">Kiriti Group</span>
+        </a>
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" style="position: relative; top: 0; z-index: 999;">
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                
+            <ul class="flex flex-col p-4 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 listnavbar">
+                
+                <!-- <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                </li> -->
+                <li>
+                    <div class="dropdown inline-block relative">
+                        <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1 uppercase font-bold text-base">Residential</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <ul class="dropdown-menu border border-[#c4a165] absolute hidden bg-[#171717] text-[#c4a165] pt-1 z-50">
+                            <li class=""><a class="rounded-t bg-[#171717] border border-[#c4a165] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                            <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown inline-block relative">
+                        <button class=" text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1 uppercase font-bold text-base">Commercial</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <ul class="dropdown-menu border border-[#c4a165] absolute hidden bg-[#171717] text-[#c4a165] pt-1 z-50">
+                            <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                            <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="navbarmenumob">
+                <li>
+                    <div class="dropdown inline-block relative">
+                        <button class=" text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1 uppercase font-bold text-base">More</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <ul class="dropdown-menu border border-[#c4a165] absolute hidden bg-[#171717] text-[#c4a165] pt-1 z-50">
+                            <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="https://northerncolumbia.com/" target="_blank">Northern Colombia</a></li>
+                            <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#about">About Us</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="./careers.html">Careers</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#enquiremove">Contact</a></li>
+                        </ul>
+                    </div>
+                </li>
+                </div>
+                <li>
+                    <div class="dropdown inline-block relative">
+                        <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1 uppercase font-bold text-base">Projects Completed</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <ul class="dropdown-menu border border-[#c4a165] absolute hidden text-[#c4a165] bg-[#171717] pt-1 z-50">
+                            <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                            <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <div class="navbarmenudesktop">
+                    <div class="dropdown inline-block relative">
+                        <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1 uppercase font-bold text-base">
+                              <svg class="w-5 text-gold" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                                <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z">
+                                </path>
+                                <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                                </svg>
+                            </span>
+                            <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> -->
+                        </button>
+                        <ul class="dropdown-menu border border-[#c4a165] absolute hidden text-[#c4a165] bg-[#171717] pt-1 z-50" style="width: 200px;">
+                            <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="https://northerncolumbia.com/" target="_blank">Northern Colombia</a></li>
+                            <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#about">About Us</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="./careers.html">Careers</a></li>
+                            <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#enquiremove">Contact Us</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </li>
+                
+            </ul>
+        </div>
+        </nav>
+        <!-- <div class="flex md:order-2">
+          <button type="button" class="text-white uppercase hover:bg-stone-50 hover:text-black hover:bg-[#c4a165] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 text-center mr-0 md:mr-0 " style="background: #c4a165; width: 100%;"><p style="font-size: 12px; margin-left: 8px;margin-right: 10px;">Upcoming Projects</p></button>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+      </div>
+      </div>
+    </header>
     <nav class="px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0" style="background: rgba(0, 0, 0, 0.2);backdrop-filter: blur(2px);">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="./" class="flex items-center">
                 <img src="imgs/logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                 <span class="self-center text-xl font-semibold whitespace-nowrap text-[#c4a165]">Kiriti Group</span>
             </a>
-            <div class="flex md:order-2">
-                <button type="button" class="text-white uppercase hover:bg-stone-50 hover:text-black hover:bg-[#c4a165] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  py-2.5 text-center mr-0 md:mr-0 " style="background: #c4a165; width: 100%;"><p style="font-size: 12px; margin-left: 8px;margin-right: 10px;">Upcoming Projects</p></button>
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                
-                <ul class="flex flex-col p-4 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 listnavbar">
-                    
-                    <!-- <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-                    </li> -->
-                    <li>
-                        <div class="dropdown inline-block relative">
-                            <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
-                                <span class="mr-1 uppercase font-bold text-base">Residential</span>
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-                            </button>
-                            <ul class="dropdown-menu border border-[#c4a165] absolute hidden bg-[#171717] text-[#c4a165] pt-1 z-50">
-                                <li class=""><a class="rounded-t bg-[#171717] border border-[#c4a165] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
-                                <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown inline-block relative">
-                            <button class=" text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
-                                <span class="mr-1 uppercase font-bold text-base">Commercial</span>
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-                            </button>
-                            <ul class="dropdown-menu border border-[#c4a165] absolute hidden bg-[#171717] text-[#c4a165] pt-1 z-50">
-                                <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
-                                <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <div class="navbarmenumob">
-                    <li>
-                        <div class="dropdown inline-block relative">
-                            <button class=" text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
-                                <span class="mr-1 uppercase font-bold text-base">More</span>
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-                            </button>
-                            <ul class="dropdown-menu border border-[#c4a165] absolute hidden bg-[#171717] text-[#c4a165] pt-1 z-50">
-                                <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="https://northerncolumbia.com/" target="_blank">Northern Colombia</a></li>
-                                <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#about">About Us</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="./careers.html">Careers</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#enquiremove">Contact</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    </div>
-                    <li>
-                        <div class="dropdown inline-block relative">
-                            <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
-                                <span class="mr-1 uppercase font-bold text-base">Projects Completed</span>
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-                            </button>
-                            <ul class="dropdown-menu border border-[#c4a165] absolute hidden text-[#c4a165] bg-[#171717] pt-1 z-50">
-                                <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
-                                <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                      <div class="navbarmenudesktop">
-                        <div class="dropdown inline-block relative">
-                            <button class="text-[#c4a165] font-semibold py-2 px-4 rounded inline-flex items-center">
-                                <span class="mr-1 uppercase font-bold text-base">
-                                  <svg class="w-5 text-gold" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
-                                    <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z">
-                                    </path>
-                                    <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
-                                    </svg>
-                                </span>
-                                <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> -->
-                            </button>
-                            <ul class="dropdown-menu border border-[#c4a165] absolute hidden text-[#c4a165] bg-[#171717] pt-1 z-50" style="width: 200px;">
-                                <li class=""><a class="rounded-t bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="https://northerncolumbia.com/" target="_blank">Northern Colombia</a></li>
-                                <li class=""><a class="bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#about">About Us</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="./careers.html">Careers</a></li>
-                                <li class=""><a class="rounded-b bg-[#171717] hover:bg-white hover:text-[#c4a165] py-2 px-4 block whitespace-no-wrap" href="#enquiremove">Contact Us</a></li>
-                            </ul>
-                        </div>
-                      </div>
-                    </li>
-                    
-                </ul>
-            </div>
+            
+            -->
         </div>
     </nav>
     <!-- ############################################################################################
@@ -285,7 +298,7 @@
                 alt="Wild Landscape"
               />
             </div>
-            <div class="carousel-item float-left w-full">
+            <!-- <div class="carousel-item float-left w-full">
               <img
                 src="imgs/banner2.jpeg"
                 class="block w-full"
@@ -298,7 +311,7 @@
                 class="block w-full"
                 alt="Exotic Fruits"
               />
-            </div>
+            </div> -->
           </div>
           <button
             class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
@@ -425,10 +438,11 @@
         <br><br><br><br>
 
         <!-- NEW PROJECT END -->
+        <center>
         <div class="cardsDiv" style="margin-top: -95px;">
             <div id="innerCardsDiv">
                 <div class="main-container">
-                    <section class="section860 flex flexResponsive flexJustifyBetween flexAlignItemsCenter padtop15">
+                    <section class="section860 flexAlignItemsCenter padtop15">
             <div class="width50">
             <h2 class="pad10 container-960 color-residential" style="text-align: center;"><a target="_blank" href="https://www.brigadegroup.com/residential/"><span class="icon-residential-big">&nbsp;</span><span class="max-w-lg mb-6 font-sans text-center text-3xl font-bold leading-none tracking-tight mt-16 text-gold sm:text-4xl md:mx-auto">Residential</span><span class="icon-arrow-5">&nbsp;</span></a></h2>
             <div id="rResidentialGalleryStorySlider" class="rSlider overflowHidden nonSelectable posRelative" data-time="4" style="margin: 14px;">
@@ -997,7 +1011,9 @@
                     </p> -->
                 </div>
         <!-- ------------------Cards grid start----------------- -->
-        <div class="grid gap-10 row-gap-5 px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 sm:grid-cols-2 lg:grid-cols-3" >
+        <center>
+          <div class="grid gap-10 row-gap-5  py-12 mx-auto sm:max-w-xl md:max-w-full lg:w-1/2 md:px-24 lg:px-8 lg:py-20 sm:grid-cols-2 lg:grid-cols-2">
+
             
             <div class="flex card flex-col justify-end border border-gold rounded shadow-sm" bgImg="clubhouse.jpg">
                 <div>
@@ -1021,6 +1037,7 @@
             </div> 
     
         </div>
+        </center>
         <!-- --------------------Cards grid end---------------------- -->
         <h2
                         class="max-w-lg mb-6 font-sans text-center text-3xl font-bold leading-none tracking-tight mt-16 text-gold sm:text-4xl md:mx-auto">
@@ -1039,7 +1056,7 @@
                         Projects
                     </h2>
                     <!-- ------------------Cards grid start----------------- -->
-        <div class="grid gap-10 row-gap-5 px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 sm:grid-cols-2 lg:grid-cols-3" >
+        <div class="grid gap-10 row-gap-5 px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:w-1/2 md:px-24 lg:px-8 lg:py-20 sm:grid-cols-2 lg:grid-cols-2" >
             
             <div class="flex card flex-col justify-end border border-gold rounded shadow-sm" bgImg="clubhouse.jpg">
                 <div>
@@ -1067,7 +1084,7 @@
     </div>
     </div>
 
-    
+  </center>
   
     <!-- ############################################################################################
             ----------------------------------- About Us -----------------------------------------------
@@ -1141,6 +1158,61 @@
                 </div>
               </section>
     
+
+
+
+    <!-- ############################################################################################
+            ----------------------------------- Testimonials -----------------------------------------------
+            ############################################################################################# -->
+
+
+            <section class="text-gray-600 body-font">
+              <div class="container px-5 mx-auto">
+                <div class="flex flex-col">
+                  <!-- <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                    <div class="w-24 h-full bg-indigo-500"></div>
+                  </div> -->
+                  <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                    <h1 class="sm:w-3/4 text-gold font-medium title-font text-2xl mb-2 sm:mb-0 font-bold leading-none tracking-tight">Testimonials</h1>
+                    <!-- <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p> -->
+                  </div>
+                </div>
+                <div class="flex flex-wrap ">
+                  <div class="p-4 sm:w-full md:w-1/2 w-1/2">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                      </svg>
+                      <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                      <a class="inline-flex items-center">
+                        <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                        <span class="flex-grow flex flex-col pl-4">
+                          <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                          <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-4 md:w-1/2 w-1/2">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                      </svg>
+                      <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                      <a class="inline-flex items-center">
+                        <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                        <span class="flex-grow flex flex-col pl-4">
+                          <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                          <span class="text-gray-500 text-sm">DESIGNER</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+
     <!-- ############################################################################################
             ----------------------------------- Careers -----------------------------------------------
             ############################################################################################# -->
@@ -1163,7 +1235,7 @@
             <!-- ############################################################################################
             ----------------------------------- CLIENTS SECTION -----------------------------------------------
             ############################################################################################# -->
-     <div class="bg-neutral-900">
+     <!-- <div class="bg-neutral-900">
         <div class="px-4 py-4 mt-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <h2 class="max-w-lg mb-10 font-sans text-center text-3xl font-bold leading-none tracking-tight mt-8 text-gold sm:text-4xl md:mx-auto">
                 Book a Site Visit
@@ -1171,13 +1243,13 @@
             <div class="grid grid-cols-3 gap-5 row-gap-5 sm:grid-cols-3 lg:grid-cols-3">
                 <div class="text-center">
                     <div
-                        class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-gold sm:w-12 sm:h-12">
+                        class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-gold sm:w-12 sm:h-12"> -->
                         <!-- <svg class="w-8 h-8 text-white sm:w-10 sm:h-10" stroke="currentColor"
                             viewBox="0 0 52 52">
                             <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
                                 points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                         </svg> -->
-                        <a href="tel:9898989898"><img src="https://img.icons8.com/ios/30/ffffff/phone.png"/></a>
+                        <!-- <a href="tel:9898989898"><img src="https://img.icons8.com/ios/30/ffffff/phone.png"/></a>
                     </div>
                     <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase text-gold">
                         Mobile
@@ -1205,7 +1277,7 @@
             </div>
         </div>
         </div> 
-</div>
+</div> -->
 
         <!-- ############################################################################################
                                 Contact US
@@ -1678,5 +1750,6 @@ function backToTop() {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
     </body>
     </html>
