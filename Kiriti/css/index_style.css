@@ -166,3 +166,10 @@ h2.companyname{
   background-image: linear-gradient(0deg, rgba(0,0,0,1) 19%, rgba(0, 0, 0, 0.1) 100%),url('../imgs/projectBg1.jpg');
 
 }
+
+
+@media(max-width:480px){
+.newtestimonal{
+ width: auto !important; 
+}
+}
