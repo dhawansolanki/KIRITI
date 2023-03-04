@@ -172,4 +172,11 @@ h2.companyname{
 .newtestimonal{
  width: auto !important; 
 }
+
+
+}
+.mobmenu1{
+  position: fixed !important;
+  top: 200px;
+
 }
